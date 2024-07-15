@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+import requests
 from transformers import DistilBertTokenizer
 import tensorflow as tf
 tf.experimental.numpy.experimental_enable_numpy_behavior()
