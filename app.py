@@ -9,7 +9,7 @@ import os
 app = Flask(__name__)
 
 deployed_model_name = os.environ.get('MODEL_NAME') or "itsmtickets"
-rest_url = "http://modelmesh-serving:8008"
+rest_url = "http://modelmesh-serving.snow-incident-resolution:8008"
 infer_url = f"{rest_url}/v2/models/{deployed_model_name}/infer"
 
 tokenizer = DistilBertTokenizer.from_pretrained('alezzandro/itsm_tickets')
